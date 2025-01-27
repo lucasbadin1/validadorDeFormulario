@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Formulário</h1>
+        <p>
+            <ul>
+                <li>Nenhum campo pode estar vazio</li>
+                <li>Usuário só poderá conter letras e/ou números</li>
+                <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+                <li>Senha precisa ter entre 6 e 12 caracteres</li>
+            </ul>
+        </p>
+        <form action="/" method="POST" class="formulario">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" class="nome">
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="sobrenome">
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" class="cpf">
+            </div>
+            <div>
+                <label for="usuario">Usuário</label>
+                <input type="text" class="usuario">
+            </div>
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" class="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="password2">Repetir Senha</label>
+                <input type="password" class="password2" name="password2" id="password2">
+            </div>
+            <div>
+                <button type="submit" class="input-botao">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="classValidaCPF.js"></script>
+</body>
+
+</html>
